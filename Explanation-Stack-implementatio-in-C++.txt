@@ -1,0 +1,25 @@
+# Data-Structure-And-Algorithm-with-C-
+Explanation:
+
+Push: This operation adds an element to the top of the stack. It first checks if the stack is full, and if it is, it displays an error message. Otherwise, it increments the top index and adds the element to the stack.
+
+Pop: This operation removes the top element from the stack. It first checks if the stack is empty, and if it is, it displays an error message. Otherwise, it simply decrements the top index to remove the top element.
+
+Top: This operation returns the top element of the stack without removing it. It first checks if the stack is empty, and if it is, it displays an error message. Otherwise, it returns the top element.
+
+Empty: This operation checks if the stack is empty. It simply returns a boolean value indicating whether the top index is -1 (empty stack) or not.
+
+The program uses a menu-based approach to perform these operations. It displays a menu of options to the user, prompts the user to choose an option, and performs the corresponding operation based on the user's choice. The program loops until the user chooses to exit. Overall, this program provides a basic implementation of a stack data structure in C++.
+
+Time Complexity:
+The time and space complexity of this program depends on the operations being performed:
+
+Push operation: This operation has a time complexity of O(1) because it simply increments the top index and adds the element to the stack. The space complexity is also O(1) because it only adds one element to the stack.
+
+Pop operation: This operation has a time complexity of O(1) because it simply decrements the top index to remove the top element. The space complexity is also O(1) because it only removes one element from the stack.
+
+Top operation: This operation has a time complexity of O(1) because it simply returns the top element of the stack. The space complexity is also O(1) because it does not modify the stack.
+
+Empty operation: This operation has a time complexity of O(1) because it simply checks the top index to see if the stack is empty. The space complexity is also O(1) because it does not modify the stack.
+
+The menu-based approach of this program adds a small overhead to each operation, but it does not affect the overall time or space complexity. The time and space complexity of the program as a whole can be considered to be O(1) per operation, assuming the stack does not reach its maximum capacity. However, if the stack is implemented as a dynamically allocated array, the space complexity of the program would be O(n), where n is the maximum capacity of the stack.
