@@ -1,0 +1,20 @@
+Explanation:
+This program is an implementation of a Circular Queue using an array and a class in C++. The circular queue is a data structure where the last element is connected to the first element to create a circular data structure. This program allows the user to perform various operations on the circular queue such as insertion, deletion, displaying the elements, and checking if the queue is empty or full.
+
+The class CircularQueue has the following private data members: an integer array "queue" to store the elements, "front" to keep track of the front index of the queue, "rear" to keep track of the rear index of the queue, and "SIZE" to determine the maximum size of the queue.
+
+The class has the following public member functions:
+
+A constructor to initialize the front and rear indices to -1.
+An "isFull()" function to check if the queue is full. It checks if the next index of the rear index is equal to the front index.
+An "isEmpty()" function to check if the queue is empty. It checks if the front and rear indices are both -1.
+An "enqueue()" function to insert an element at the rear end of the queue. It first checks if the queue is full, and if not, it increments the rear index by 1 using the formula (rear+1)%SIZE and inserts the element at that index.
+A "dequeue()" function to remove an element from the front end of the queue. It first checks if the queue is empty, and if not, it increments the front index by 1 using the formula (front+1)%SIZE.
+A "display()" function to display all the elements of the queue. It starts from the front index and prints each element till the rear index using the formula (i+front)%SIZE.
+A "menu()" function to display the menu of available operations and get user input.
+
+
+Time Complexity:
+The time complexity of each function is O(1) except for the display() function which has a time complexity of O(n) since it has to iterate over all the elements of the queue.
+
+The space complexity of the program is O(n) where n is the maximum size of the queue.
