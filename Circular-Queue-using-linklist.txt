@@ -1,0 +1,22 @@
+Explanation:
+This program is an implementation of a queue data structure using a circular array. A queue is a linear data structure in which the elements are inserted from the rear end and deleted from the front end. In this program, we are using a circular array to implement the queue, which means that the last element of the queue is connected to the first element of the queue.
+
+The program starts by defining the maximum size of the queue using a constant variable SIZE. It then defines a class CircularQueue that contains an integer array arr to store the elements of the queue, integer variables front and rear to keep track of the front and rear ends of the queue, and a function isFull to check if the queue is full.
+
+The enqueue function adds an element to the rear end of the queue by incrementing the rear pointer and storing the element at that index. If the queue is full, it displays a message saying "Queue is full".
+
+The dequeue function removes an element from the front end of the queue by incrementing the front pointer. If the queue is empty, it displays a message saying "Queue is empty".
+
+The display function displays all the elements of the queue by iterating over the array from the front to the rear pointer.
+
+The main function displays a menu-driven program that allows the user to choose the operation they want to perform on the queue. It initializes a CircularQueue object and calls the appropriate functions based on the user's choice.
+
+Time Complexity:
+
+enqueue operation: O(1) - constant time complexity as it involves creating a new node and updating the rear pointer
+dequeue operation: O(1) - constant time complexity as it involves deleting the front node and updating the front pointer
+display operation: O(n) - linear time complexity as it involves traversing through the entire linked list
+
+Space Complexity:
+
+The space complexity of this program is O(n) where n is the number of elements in the Queue. This is because we create a new node for each element in the Queue.
