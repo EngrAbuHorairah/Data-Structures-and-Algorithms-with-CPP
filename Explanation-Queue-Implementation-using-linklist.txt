@@ -1,0 +1,40 @@
+Explanation:
+This program implements a queue data structure using a linked list in C++. The program provides a menu-based interface to interact with the queue, allowing the user to enqueue, dequeue, and display the elements in the queue.
+
+The program defines two classes - Node and Queue. The Node class represents each node in the linked list and contains an integer data field and a pointer to the next node. The Queue class represents the queue data structure and contains two private pointers - front and rear - which point to the first and last nodes of the queue, respectively.
+
+The Queue class contains three member functions - enqueue, dequeue, and display. The enqueue function adds a new element to the end of the queue by creating a new Node object and updating the rear pointer. The dequeue function removes the first element from the queue by updating the front pointer and deleting the first node. The display function prints the elements of the queue to the console.
+
+The main function provides a menu-based interface for the user to interact with the queue. It creates a new Queue object and enters a loop that repeatedly prompts the user for their choice of operation. The user can choose to enqueue a new element, dequeue the first element, display the elements of the queue, or exit the program.
+
+When the user chooses to enqueue a new element, the program prompts them to enter a value, which is then added to the end of the queue using the enqueue function. When the user chooses to dequeue the first element, the program removes the first element from the queue using the dequeue function. When the user chooses to display the elements of the queue, the program prints the elements using the display function. If the user chooses to exit the program, the loop is broken and the program terminates.
+
+
+Time and space complexity:
+The time and space complexity of the queue implementation using a linked list in this program can be analyzed as follows:
+
+Enqueue operation:
+
+Time complexity: O(1)
+
+Space complexity: O(1)
+
+This operation involves creating a new node and updating the rear pointer, both of which take constant time.
+
+Dequeue operation:
+
+Time complexity: O(1)
+
+Space complexity: O(1)
+
+This operation involves updating the front pointer and deleting the first node, both of which take constant time.
+
+Display operation:
+
+Time complexity: O(n)
+
+Space complexity: O(1)
+
+This operation involves traversing the entire linked list to print all elements, which takes linear time proportional to the number of elements in the queue.
+
+Therefore, the time and space complexity of the operations in this program are efficient for most practical purposes. Enqueue and dequeue operations take constant time, while display operation takes linear time. The space complexity is also constant for all operations.

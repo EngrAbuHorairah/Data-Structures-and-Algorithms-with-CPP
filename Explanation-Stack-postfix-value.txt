@@ -1,0 +1,5 @@
+Explanation:
+The program takes a postfix expression as input, evaluates it using a stack, and returns the result. The calculate function implements the postfix evaluation algorithm by iterating through each character in the expression and performing the appropriate arithmetic operation when it encounters an operator. The final result is obtained from the top of the stack and returned. The main function simply calls the calculate function with a sample postfix expression and prints the result to the console.
+
+Time and space complexity:
+The time complexity of this program is O(n), where n is the length of the postfix expression. This is because the program iterates through each character in the expression exactly once. The space complexity is also O(n), because the stack size is proportional to the length of the expression.

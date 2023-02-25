@@ -1,0 +1,16 @@
+Explanation:
+
+
+This program is an implementation of converting an infix expression to a postfix expression. The program uses a stack data structure to store the operators of the expression. The "prec" function returns the precedence of the operator passed to it, which is used to determine the order of operations.
+
+The "convert" function takes an infix expression as an argument and returns the postfix expression. It scans each character of the expression one by one, and if the character is an operand, it is appended to the postfix expression. If the character is an opening parenthesis, it is pushed to the stack. If the character is a closing parenthesis, the stack is popped until the opening parenthesis is found, and all the operators popped are appended to the postfix expression. If the character is an operator, it is compared to the operators in the stack, and if its precedence is lower or equal to the operator at the top of the stack, the operator at the top is popped and appended to the postfix expression. After the entire infix expression is scanned, all the remaining operators in the stack are popped and appended to the postfix expression.
+
+The "main" function initializes an infix expression "a+b", calls the "convert" function to obtain the postfix expression, and prints it on the console.
+
+
+
+Time and Space Complexity:
+
+The time complexity of the "convert" function depends on the length of the input infix expression. The function scans each character of the input expression exactly once and performs a constant number of operations on each character. Therefore, the time complexity of the function is O(n), where n is the length of the input expression.
+
+The space complexity of the program is determined by the size of the stack used to store operators. The maximum size of the stack is equal to the number of operators in the input expression. Therefore, the space complexity of the program is also O(n), where n is the length of the input expression.
