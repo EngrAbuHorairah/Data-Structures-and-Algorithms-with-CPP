@@ -1,0 +1,21 @@
+Explantion:
+This program implements a circular singly linked list and allows the user to insert nodes at the beginning or end of the list, delete nodes with a given value, and display the list.
+
+The program starts with the Node class definition, which has two public members: an integer data value and a pointer to the next node. The CircularSinglyLinkedList class is defined next, which has a private member head, a pointer to the head node. The class has four public member functions:
+
+CircularSinglyLinkedList(): The constructor function initializes the head pointer to nullptr.
+
+insertAtBeginning(int value): This function inserts a new node with the given value at the beginning of the list. If the list is empty, it sets the head pointer to the new node and makes the new node point to itself. Otherwise, it traverses the list to find the last node, sets the next pointer of the last node to the new node, and makes the new node point to the head. Finally, it updates the head pointer to point to the new node.
+
+insertAtEnd(int value): This function is similar to insertAtBeginning(), but it inserts the new node at the end of the list.
+
+deleteNode(int value): This function deletes the node with the given value from the list. If the list is empty, it prints an error message and returns. Otherwise, it traverses the list to find the node with the given value. If the node is not found, it prints an error message and returns. If the node is the only node in the list, it sets the head pointer to nullptr and deletes the node. If the node is the head node, it updates the head pointer to point to the next node, sets the next pointer of the last node to the new head, and deletes the node. If the node is not the head node, it updates the next pointer of the previous node to point to the next node of the deleted node, and deletes the node.
+
+The main function of the program implements a menu-based interface for the user to interact with the circular singly linked list. The user can choose to insert nodes at the beginning or end of the list, delete nodes with a given value, display the list, or exit the program. The program uses a while loop to continuously prompt the user for input until the user chooses to exit the program.
+
+Time Complexity:
+The time complexity of the insertAtBeginning() and insertAtEnd() methods in the CircularSinglyLinkedList class is O(n) in the worst case because it may be necessary to traverse the entire list to find the last node. However, in the best case (when inserting at the beginning of the list), the time complexity is O(1) because we only need to update the head pointer.
+
+The time complexity of the deleteNode() method is also O(n) in the worst case because we may need to traverse the entire list to find the node to be deleted. However, in the best case (when deleting the first node), the time complexity is O(1) because we only need to update the head pointer.
+
+The space complexity of this program is O(n), where n is the number of nodes in the circular singly linked list. This is because each node in the list requires space for an integer value and a pointer to the next node, and the size of the list depends on the number of nodes it contains. Additionally, the main() function uses a constant amount of space for variables like op, size, num, op2, and dltnum, which are not dependent on the size of the list.
